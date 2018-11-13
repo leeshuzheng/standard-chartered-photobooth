@@ -1,1 +1,15 @@
 // front-page styles
+
+@import '../../node_modules/animate-sass/animate';
+
+.front-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    width: 200px;
+    height: 80px;
+  }
+
+}

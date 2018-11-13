@@ -1,8 +1,19 @@
 'use strict';
 
+import $ from 'jquery'
+import CaptureImage from '../capture-image/capture-image';
+
+
 export default class SelectBackground {
   constructor() {
-    this.name = 'select-background';
-    console.log('%s module', this.name.toLowerCase());
+
+    let selectBackground = $('.select-background');
+
+    selectBackground.click(function() {
+      $(this).removeClass('show');
+
+      new CaptureImage();
+    })
+
   }
 }

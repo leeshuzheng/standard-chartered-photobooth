@@ -1,8 +1,14 @@
 'use strict';
 
+import $ from 'jquery';
+import Webcam from 'webcamjs';
+
 export default class CaptureImage {
   constructor() {
-    this.name = 'capture-image';
-    console.log('%s module', this.name.toLowerCase());
+
+    let captureImage = $('.capture-image');
+    captureImage.addClass('show');
+    
+    Webcam.attach('#camera');
   }
 }

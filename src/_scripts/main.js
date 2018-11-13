@@ -14,6 +14,5 @@ $(() => {
   new FrontPage();
   new LotsOfLikes();
   new SelectBackground();
-  new CaptureImage();
 
 });

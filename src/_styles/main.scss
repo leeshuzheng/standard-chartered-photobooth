@@ -1,6 +1,13 @@
 // Normalize Styles
 @import 'node_modules/normalize.css/normalize';
 
+@import '../_modules/atoms/sc-logo/sc-logo';
+
+@import '../_modules/organisms/front-page/front-page';
+@import '../_modules/organisms/lots-of-likes/lots-of-likes';
+@import '../_modules/organisms/select-background/select-background';
+@import '../_modules/organisms/capture-image/capture-image';
+
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
 *,
@@ -34,8 +41,6 @@ html {
   display: none;
 
   &.show {
-    display: block;
+    display: flex;
   }
 }
-
-@import '../_modules/atoms/sc-logo/sc-logo';

@@ -1,8 +1,18 @@
 'use strict';
 
+import $ from 'jquery';
+
 export default class LotsOfLikes {
   constructor() {
-    this.name = 'lots-of-likes';
-    console.log('%s module', this.name.toLowerCase());
+
+    let lotsOfLikes = $('.lots-of-likes');
+
+    lotsOfLikes.click(function() {
+
+      $(this).removeClass('show');
+      $('.select-background').addClass('show');
+
+    })
+
   }
 }
