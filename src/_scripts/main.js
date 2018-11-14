@@ -4,6 +4,8 @@
 'use strict';
 
 import $ from 'jquery';
+import Webcam from 'webcamjs';
+
 import FrontPage from '../_modules/organisms/front-page/front-page';
 import LotsOfLikes from '../_modules/organisms/lots-of-likes/lots-of-likes';
 import SelectBackground from '../_modules/organisms/select-background/select-background';
@@ -14,5 +16,9 @@ $(() => {
   new FrontPage();
   new LotsOfLikes();
   new SelectBackground();
+
+
+  // init camera first so that it appears seamlessle
+  Webcam.attach('#camera');
 
 });

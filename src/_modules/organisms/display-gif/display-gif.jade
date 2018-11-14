@@ -1,0 +1,7 @@
+mixin display-gif(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  .page.display-gif
+    .display-gif__holder
+      img(id="animatedGIF")

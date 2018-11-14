@@ -7,6 +7,7 @@
 @import '../_modules/organisms/lots-of-likes/lots-of-likes';
 @import '../_modules/organisms/select-background/select-background';
 @import '../_modules/organisms/capture-image/capture-image';
+@import '../_modules/organisms/display-gif/display-gif';
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
@@ -38,9 +39,11 @@ html {
 
   border: 1px solid black;
 
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 
   &.show {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
   }
 }
