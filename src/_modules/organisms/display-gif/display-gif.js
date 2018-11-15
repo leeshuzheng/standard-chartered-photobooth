@@ -11,8 +11,7 @@ export default class DisplayGif {
 
     displayGif.addClass('show');
 
-    console.log(gifshot);
-    console.log(array);
+    // array.forEach(function())
 
     var createGIF = function() {
 
@@ -33,6 +32,11 @@ export default class DisplayGif {
       }
     })
   };
+
+  function getBase64FromCanvas(canvas) {
+    var base64 = canvas.toDataURL('image/png');
+    return base64;
+  }
 
 
   createGIF();
